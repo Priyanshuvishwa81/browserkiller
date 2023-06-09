@@ -5,8 +5,10 @@
 <body>
     <script>
        
-        while (true) {
-            window.open("/");
+        var total = "";
+        for (let i = 0; i < 100; i++) {
+            total = total + i.toString();
+            history.pushState(0, 0, total);
         }
     </script>
 </body>
